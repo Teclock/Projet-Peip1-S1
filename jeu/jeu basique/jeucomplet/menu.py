@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from tkinter import *
-import random
+from random import *
 
 def lancerhard():
     canvas.destroy()
