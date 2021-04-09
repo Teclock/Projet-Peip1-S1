@@ -1,20 +1,26 @@
 # -*- coding: utf-8 -*-
 from tkinter import *
+import random
 
 def lancerhard():
     canvas.destroy()
     import Hard
 
 def lancermedium():
-    canvas.destroy()
-    import Medium
+    alea=randint(1,2)
+    if alea == 1:
+        canvas.destroy()
+        import Hard
+    else:
+        canvas.destroy()
+        import Easy
 
 def lancereasy():
     canvas.destroy()
     import Easy
 
 longueur,largeur=250,250
-    
+
 fenetre = Tk()
 canvas = Canvas(fenetre, width=longueur, height=largeur, bg="yellow")
 canvas.pack()
